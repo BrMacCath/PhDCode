@@ -75,8 +75,6 @@ while newEnergy - energy > .01
         moveProjMat = moveCircMat*moveCircMat';
         moveImage = moveProjMat*Im*moveProjMat;
         newEnergy = trace(moveImage'*moveImage);
-%         thetaName = makeThetaName(thetaNum);
-%         saveas(imshow(moveImage),thetaName);
         Energies = [Energies newEnergy];
         Steps =[Steps thetaNum];
         thetaNum = thetaNum +1;
@@ -148,8 +146,7 @@ while newEnergy - energy > .01
         moveImage = kron(moveProjection,ones(13));
         Energies = [Energies newEnergy];
         Steps =[Steps thetaNum];
-%         thetaName = makeThetaName(thetaNum);
-%         saveas(imshow(moveImage),thetaName);
+
         thetaNum = thetaNum +1;
     end
 
