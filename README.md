@@ -12,6 +12,8 @@ Points on a Grassmannian can be defined by the projection matrix they form. Furt
 
 ## Two dimensional sampling
 
+To extend the cases for experimentation, I applied these algorithms to a 2 dimensional version, images. We can still see the effect of the algorithms applied here but this time we can apply them to MNIST and jpg images.
+
 ## Sparse Matrix Variety
 
 When talking about regions of compressing images, Grassmannians are a natural candidate as each point on a Grassmannian can be uniquely defined by a projection matrix, which can be used to compress images. Furthermore, another common technique to process images is to use wavelets. Daubechies wavelets can be mapped into Grassmannians and furthermore, there is a specific structure they follow within Grassmannians. The purpose of this folder is to experiment with a structure found by examining Daubechies wavelets within Grassmannians.
@@ -19,3 +21,5 @@ When talking about regions of compressing images, Grassmannians are a natural ca
 The structure defined creates a Schubert cell within Grassmannians. It is possible to generate elements in this variety and to travel along it using rotation matrices instead of derivatives. A major advatage of this is that we can use machine learning algorithms in a less computationally expensive way.
 
 ## Experimental Code
+
+This is code from a future paper.
