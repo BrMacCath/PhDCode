@@ -16,7 +16,7 @@ test = localVariance(l,28);
 
 %% Getting the information from the image
 
-I = im2double( imread("MNISTExample.png"));
+I = im2double( imread("Images/MNISTExample.png"));
 [row column depth] = size(I) 
 
 %% Creating the local Variance matrix for each side.
